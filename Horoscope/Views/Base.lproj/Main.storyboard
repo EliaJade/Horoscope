@@ -112,9 +112,17 @@
                             <constraint firstItem="RPT-Fr-eQg" firstAttribute="trailing" secondItem="sWR-1q-TxF" secondAttribute="trailing" id="tKI-qc-3rE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hyy-bJ-gSf"/>
+                    <navigationItem key="navigationItem" id="hyy-bJ-gSf">
+                        <barButtonItem key="rightBarButtonItem" title="Favorite" image="heart" catalog="system" id="0WC-Fk-XWs">
+                            <color key="tintColor" systemColor="systemPinkColor"/>
+                            <connections>
+                                <action selector="favoriteMenu:" destination="mm5-SA-IBr" id="Di7-Tg-kmM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="datesLabel" destination="1Ub-IN-SDR" id="dX0-27-3MV"/>
+                        <outlet property="favoriteMenu" destination="0WC-Fk-XWs" id="iu7-NB-O0P"/>
                         <outlet property="signImageView" destination="UbS-Ii-JP2" id="oly-FA-t9f"/>
                     </connections>
                 </viewController>
@@ -142,8 +150,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

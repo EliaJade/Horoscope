@@ -15,8 +15,11 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var datesLabel: UILabel!
     
+    @IBOutlet weak var favoriteMenu: UIBarItem!
+    
     //MARK: Properties
     var horoscope: Horoscope!
+    var isFavorite = false
     
     //MARK: Lifecycle
     override func viewDidLoad() {
@@ -25,7 +28,21 @@ class DetailViewController: UIViewController {
         signImageView.image = horoscope.image
         datesLabel.text = horoscope.dates
         navigationItem.title = horoscope.name
+        
+        isFavorite = SessionManager().isFavorite(id: horoscope.id)
     }
     
-
+    func setFavoriteIcon() {
+        if isFavorite {
+            favoriteMenu.image = UIImage(systemName: "heart.fill")
+        } else {
+            favoriteMenu.image = UIImage(systemName: "heart")
+        }
+    }
+    
+    
+    
+    @IBAction func favoriteMenu(_ sender: Any) {
+    }
+    
 }
