@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CCDF26B2DD49E6F00400338 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDF26A2DD49E6F00400338 /* DetailViewController.swift */; };
 		6CFFE2562DD1FAFA0015E9A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFE2552DD1FAFA0015E9A4 /* AppDelegate.swift */; };
 		6CFFE2582DD1FAFA0015E9A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFE2572DD1FAFA0015E9A4 /* SceneDelegate.swift */; };
 		6CFFE25A2DD1FAFA0015E9A4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFE2592DD1FAFA0015E9A4 /* ListViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6CCDF26A2DD49E6F00400338 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6CFFE2522DD1FAFA0015E9A4 /* Horoscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Horoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFFE2552DD1FAFA0015E9A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CFFE2572DD1FAFA0015E9A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				6CFFE2632DD1FAFB0015E9A4 /* Info.plist */,
 				6CFFE26B2DD2097D0015E9A4 /* Horoscope.swift */,
 				6CFFE26D2DD212220015E9A4 /* HoroscopeViewCell.swift */,
+				6CCDF26A2DD49E6F00400338 /* DetailViewController.swift */,
 			);
 			path = Horoscope;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				6CFFE26E2DD212220015E9A4 /* HoroscopeViewCell.swift in Sources */,
 				6CFFE26C2DD2097D0015E9A4 /* Horoscope.swift in Sources */,
 				6CFFE25A2DD1FAFA0015E9A4 /* ListViewController.swift in Sources */,
+				6CCDF26B2DD49E6F00400338 /* DetailViewController.swift in Sources */,
 				6CFFE2562DD1FAFA0015E9A4 /* AppDelegate.swift in Sources */,
 				6CFFE2582DD1FAFA0015E9A4 /* SceneDelegate.swift in Sources */,
 			);
