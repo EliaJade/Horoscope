@@ -45,10 +45,16 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Tsb-Pi-6ES">
+                                                    <rect key="frame" x="333" y="42" width="40" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" systemColor="systemPinkColor"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="dateLabel" destination="IL5-p6-x2o" id="63l-da-lP1"/>
+                                            <outlet property="favoriteImageView" destination="Tsb-Pi-6ES" id="Vyl-3F-Plf"/>
                                             <outlet property="nameLabel" destination="67f-Ao-M2o" id="eZX-6s-i5w"/>
                                             <outlet property="signImageView" destination="VnB-m8-gmu" id="PF1-Ji-JVk"/>
                                             <segue destination="mm5-SA-IBr" kind="show" id="UTM-qe-q4l"/>
@@ -116,7 +122,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Favorite" image="heart" catalog="system" id="0WC-Fk-XWs">
                             <color key="tintColor" systemColor="systemPinkColor"/>
                             <connections>
-                                <action selector="favoriteMenu:" destination="mm5-SA-IBr" id="Di7-Tg-kmM"/>
+                                <action selector="setFavorite:" destination="mm5-SA-IBr" id="NRx-se-cnv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -151,6 +157,7 @@
     </scenes>
     <resources>
         <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -42,7 +42,10 @@ class DetailViewController: UIViewController {
     
     
     
-    @IBAction func favoriteMenu(_ sender: Any) {
+    @IBAction func setFavorite(_ sender: Any) {
+        isFavorite = !isFavorite
+        SessionManager().setFavorite(id: isFavorite ? horoscope.id : " ")
+        setFavoriteIcon()
     }
     
 }

@@ -86,7 +86,6 @@
 				6CFFE2552DD1FAFA0015E9A4 /* AppDelegate.swift */,
 				6CFFE2572DD1FAFA0015E9A4 /* SceneDelegate.swift */,
 				6CFFE25E2DD1FAFA0015E9A4 /* Assets.xcassets */,
-				6CFFE2632DD1FAFB0015E9A4 /* Info.plist */,
 				6CDE7FED2DD4B1AE007974D3 /* SessionManager.swift */,
 			);
 			path = Utils;
@@ -111,6 +110,7 @@
 		6CFFE2542DD1FAFA0015E9A4 /* Horoscope */ = {
 			isa = PBXGroup;
 			children = (
+				6CFFE2632DD1FAFB0015E9A4 /* Info.plist */,
 				6CDE7FEB2DD4B127007974D3 /* Views */,
 				6CDE7FEA2DD4B115007974D3 /* Data */,
 				6CDE7FE92DD4B10B007974D3 /* ViewCells */,
